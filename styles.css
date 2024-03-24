@@ -1,0 +1,154 @@
+@font-face {
+	font-family: "DiscordFont";
+	src: url("kelvinch.regular") format("truetype");
+}
+:root {
+	--fontuse: "DiscordFont";
+}
+
+body {
+	font-family: "DiscordFont", "gg sans", "Noto Sans", "Helvetica Neue",
+		Helvetica, Arial, sans-serif;
+	background-color: #36393e;
+	color: #99aab5;
+}
+
+/* Style for Discord Server Dropdown Box*/
+#divServer {
+	position: absolute;
+	top: 20px; /* Adjust top position as needed */
+	right: 20px; /* Adjust right position as needed */
+	padding: 5px; /* Reduce padding for a smaller size */
+	border-radius: 5px;
+}
+
+#discordServerLabel {
+	display: block; /* Display the label as block to ensure it's on a new line */
+	margin-bottom: 5px; /* Add margin below label */
+	font-size: 12px; /* Reduce font size for a smaller size */
+}
+
+#discordServer {
+	width: calc(
+		100% - 10px
+	); /* Make the select element full width minus padding */
+	padding: 3px; /* Reduce padding for a smaller size */
+	border-radius: 3px;
+	border: 1px solid #ccc; /* Light gray border */
+	font-size: 12px; /* Reduce font size for a smaller size */
+	font-weight: bold;
+}
+
+/* Reset default margin and padding */
+body,
+h1,
+label,
+input,
+button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Center the heading */
+h1 {
+	text-align: left;
+	margin-top: 8px; /* Add some top margin for spacing */
+	font-size: 28px;
+	margin-bottom: 25px;
+	margin-left: 0; /* Ensure it starts from the left edge */
+}
+
+p {
+	font-weight: bold;
+}
+
+/* Container styles */
+.container {
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Label styles */
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: smaller;
+}
+
+/* Dropdown styles */
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	outline: none; /* Remove default outline */
+	background-color: rgb(56, 58, 61);
+	cursor: pointer;
+}
+
+/* textarea styles */
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: 16px;
+	font-family: var(--fontuse);
+	transition: border-color 0.3s ease;
+	outline: none;
+	resize: none;
+	background-color: rgb(56, 58, 61);
+}
+
+/* Change border color when input is focused */
+textarea:focus {
+	border-color: #007bff;
+}
+
+/* Button styles */
+button {
+	width: 30%;
+	padding: 10px;
+	background-color: #007bff; /* Blue color */
+	color: #ffffff; /* White color */
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto; /* Center the button horizontally */
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+	background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Active Status */
+.status {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
